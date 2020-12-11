@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\RoomType;
+use App\Models\RoomType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class RoomTypeFactory extends Factory
@@ -22,7 +22,9 @@ class RoomTypeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'user_id' => auth()->user()->id,
+            'title' => $this->faker->sentence,
+            'description' => $this->faker->sentence,
         ];
     }
 }

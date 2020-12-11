@@ -6,7 +6,8 @@
             </h2>
         </template>
 
-        
+
+
     </app-layout>
 </template>
 <script>

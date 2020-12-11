@@ -18,8 +18,8 @@
                                 Dashboard
                             </jet-nav-link>
 
-                            <jet-nav-link :href="route('roomType.index')" :active="route().current('roomType.index')">
-                                Rooms
+                            <jet-nav-link :href="route('room_type.index')" :active="route().current('room_type.index')">
+                                Room Type
                             </jet-nav-link>
                         </div>
                     </div>

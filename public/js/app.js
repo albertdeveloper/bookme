@@ -3437,6 +3437,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -46259,13 +46277,13 @@ var render = function() {
                     "jet-nav-link",
                     {
                       attrs: {
-                        href: _vm.route("roomType.index"),
-                        active: _vm.route().current("roomType.index")
+                        href: _vm.route("room_type.index"),
+                        active: _vm.route().current("room_type.index")
                       }
                     },
                     [
                       _vm._v(
-                        "\n                            Rooms\n                        "
+                        "\n                            Room Type\n                        "
                       )
                     ]
                   )
@@ -47620,25 +47638,75 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("app-layout", {
-    scopedSlots: _vm._u([
-      {
-        key: "header",
-        fn: function() {
-          return [
-            _c(
-              "h2",
-              {
-                staticClass: "font-semibold text-xl text-gray-800 leading-tight"
-              },
-              [_vm._v("\n            Room Type's\n        ")]
-            )
-          ]
-        },
-        proxy: true
-      }
-    ])
-  })
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "font-semibold text-xl text-gray-800 leading-tight"
+                },
+                [_vm._v("\n            Room Type's\n        ")]
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c("div", { staticClass: "p-6" }, [
+        _c("div", { staticClass: "mt-6 bg-white rounded" }, [
+          _c("div", { staticClass: "shadow overflow-x-auto" }, [
+            _c("table", { staticClass: "w-full whitespace-no-wrap" }, [
+              _c("tr", { staticClass: "text-left font-bold" }, [
+                _c("th", { staticClass: "px-6 pt-6 pb-4" }, [_vm._v("Type")]),
+                _vm._v(" "),
+                _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
+                  _vm._v("Description")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c(
+                  "td",
+                  {
+                    staticClass:
+                      "px-6 py-4 flex items-center focus:text-indigo-500 border-t"
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Tds\n                        "
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  {
+                    staticClass:
+                      "px-6 py-4  items-center focus:text-indigo-500 border-t"
+                  },
+                  [
+                    _vm._v(
+                      "\n                            Tds\n                        "
+                    )
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

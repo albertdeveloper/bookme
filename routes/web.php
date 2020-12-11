@@ -23,4 +23,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::resource('roomType', RoomTypeController::class);
+Route::resource('room_type', RoomTypeController::class);

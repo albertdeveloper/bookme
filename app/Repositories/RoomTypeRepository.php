@@ -7,6 +7,6 @@ class RoomTypeRepository implements RoomTypeRepositoryContract
 {
     public function get()
     {
-        return RoomType::get();
+        return RoomType::paginate(10);
     }
 }

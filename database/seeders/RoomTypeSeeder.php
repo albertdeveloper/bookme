@@ -21,7 +21,7 @@ class RoomTypeSeeder extends Seeder
         $user = User::first();
 
         RoomType::truncate();
-        for($i = 0; $i < 10; $i++) {
+        for($i = 0; $i < 20000; $i++) {
             RoomType::create([
                 'user_id' => $user->id,
                 'title' => $faker->company,

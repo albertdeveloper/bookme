@@ -13,7 +13,7 @@ class RoomTypeTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testRoomTypeIndex()
     {
         $response = $this->get('/room_type');
 

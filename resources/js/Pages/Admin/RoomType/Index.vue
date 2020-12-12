@@ -32,6 +32,7 @@
 import AppLayout from "@/Layouts/AppLayout";
 
 export default {
+    props:['roomTypes'],
     components: {AppLayout}
 }
 </script>

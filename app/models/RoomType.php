@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class RoomType extends Model
 {
-    protected $guarded = array();
+    protected $fillable = ['user_id','title','description'];
+
     use HasFactory;
 }

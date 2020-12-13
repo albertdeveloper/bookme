@@ -2,21 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\RoomTypeRequest;
-use App\Models\RoomType;
-use App\Repositories\RoomTypeRepositoryContract;
 use Illuminate\Http\Request;
-use Inertia\Inertia;
 
-class RoomTypeController extends Controller
+class RoomController extends Controller
 {
-    private $roomTypeRepository;
-
-    public function __construct(RoomTypeRepositoryContract $roomTypeRepositoryContract)
-    {
-        $this->roomTypeRepository = $roomTypeRepositoryContract;
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -24,9 +13,7 @@ class RoomTypeController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Admin/RoomType/Index',[
-            'roomTypes' => $this->roomTypeRepository->get(),
-        ]);
+        //
     }
 
     /**
@@ -36,7 +23,7 @@ class RoomTypeController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Admin/RoomType/Create');
+        //
     }
 
     /**
@@ -45,10 +32,9 @@ class RoomTypeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(RoomTypeRequest $request)
+    public function store(Request $request)
     {
-        $this->roomTypeRepository->process($request);
-        return redirect()->route('room_type.index');
+        //
     }
 
     /**
@@ -70,9 +56,7 @@ class RoomTypeController extends Controller
      */
     public function edit($id)
     {
-        return Inertia::render('Admin/RoomType/Update',[
-            'data' => $this->roomTypeRepository->findById($id),
-        ]);
+        //
     }
 
     /**
@@ -82,10 +66,9 @@ class RoomTypeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(RoomTypeRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        $this->roomTypeRepository->process($request);
-        return redirect()->route('room_type.index');
+        //
     }
 
     /**
@@ -96,7 +79,6 @@ class RoomTypeController extends Controller
      */
     public function destroy($id)
     {
-        $this->roomTypeRepository->delete($id);
-        return redirect()->route('room_type.index');
+        //
     }
 }

@@ -6,6 +6,10 @@
             </h2>
         </template>
         <div class="p-6">
+            <InertiaLink preserve-state preserve-scroll :href="route('room_type.create')"
+                         class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline">
+                New Room Type
+            </InertiaLink>
             <div class="mt-6 rounded" v-if="roomTypes.data.length > 0">
                 <div class="shadow overflow-x-auto">
                     <table class="w-full whitespace-no-wrap">
@@ -15,10 +19,14 @@
                         </tr>
                         <tr v-for="roomType in roomTypes.data">
                             <td class="px-6 py-4 flex items-center focus:text-indigo-500 border-t">
-                                {{ roomType.title }}
+                                <InertiaLink :href="route('room_type.edit',{id:roomType.id})">
+                                    {{ roomType.title }}
+                                </InertiaLink>
                             </td>
                             <td class="px-6 py-4  items-center focus:text-indigo-500 border-t">
-                                {{ roomType.description }}
+                                <InertiaLink :href="route('room_type.edit',{id:roomType.id})">
+                                    {{ roomType.description }}
+                                </InertiaLink>
                             </td>
                         </tr>
                     </table>

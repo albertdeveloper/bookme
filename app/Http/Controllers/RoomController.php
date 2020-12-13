@@ -2,10 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\RoomRepositoryContract;
+use App\Repositories\RoomTypeRepositoryContract;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class RoomController extends Controller
 {
+    private $roomRepository;
+    private $roomTypeRepository;
+
+    public function __construct(RoomRepositoryContract $roomRepositoryContract,RoomTypeRepositoryContract $roomTypeRepositoryContract)
+    {
+        $this->roomRepository = $roomRepositoryContract;
+        $this->roomTypeRepository = $roomTypeRepositoryContract;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +25,11 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Admin/Room/Index',[
+            'filters' => request()->only('room_type'),
+            'rooms' => $this->roomRepository->get(request()->only('room_type')),
+            'roomTypes' => $this->roomTypeRepository->list(),
+        ]);
     }
 
     /**

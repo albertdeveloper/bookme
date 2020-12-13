@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Room;
 use App\Models\RoomType;
 use App\Models\User;
 use Faker\Factory;
@@ -20,11 +21,15 @@ class RoomTypeSeeder extends Seeder
         $faker =  Factory::create();
         $user = User::first();
 
-        RoomType::truncate();
-        for($i = 0; $i < 20000; $i++) {
+        DB::table('rooms')->delete();
+        DB::table('room_types')->delete();
+
+        for($i = 0; $i < 100; $i++) {
+            $company = $faker->company;
             RoomType::create([
                 'user_id' => $user->id,
-                'title' => $faker->company,
+                'title' => $company,
+                'slug' => $company,
                 'description' => $faker->sentence,
             ]);
         }

@@ -28,4 +28,9 @@ class RoomRepository implements RoomRepositoryContract
             'price' => $request->price,
         ]);
     }
+
+    public function findById($id)
+    {
+        return Room::findOrfail($id);
+    }
 }

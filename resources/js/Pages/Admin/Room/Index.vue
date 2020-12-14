@@ -20,12 +20,12 @@
                         </tr>
                         <tr v-for="room in rooms.data">
                             <td class="px-6 py-4 flex items-center focus:text-indigo-500 border-t">
-                                <InertiaLink :href="route('room_type.edit',{id:room.id})">
+                                <InertiaLink :href="route('room.edit',{id:room.id})">
                                     {{ room.name }}
                                 </InertiaLink>
                             </td>
                             <td class="px-6 py-4  items-center focus:text-indigo-500 border-t">
-                                <InertiaLink :href="route('room_type.edit',{id:room.id})">
+                                <InertiaLink :href="route('room.edit',{id:room.id})">
                                     {{ room.description }}
                                 </InertiaLink>
                             </td>

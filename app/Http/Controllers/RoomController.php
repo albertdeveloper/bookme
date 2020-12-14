@@ -54,6 +54,7 @@ class RoomController extends Controller
     public function store(RoomRequest $request)
     {
         $this->roomRepository->process($request);
+        $this->roomRepository->process($request);
         return redirect()->route('room.index');
     }
 
@@ -76,7 +77,10 @@ class RoomController extends Controller
      */
     public function edit($id)
     {
-        //
+        return Inertia::render('Admin/Room/Update',[
+            'data' => $this->roomRepository->findById($id),
+            'roomTypes' => $this->roomTypeRepository->list(),
+        ]);
     }
 
     /**

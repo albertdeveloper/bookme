@@ -6,4 +6,5 @@ interface RoomRepositoryContract
 {
     public function get($request);
     public function process($request);
+    public function findById($id);
 }

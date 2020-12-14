@@ -90,7 +90,7 @@
                     <button
                         type="submit"
                         class="rounded text-gray-100 px-3 py-2 bg-blue-500 hover:shadow-inner hover:bg-blue-700 transition-all duration-300">
-                        Create room
+                        Update room
                     </button>
                 </div>
             </div>
@@ -100,14 +100,15 @@
 <script>
 import AppLayout from "@/Layouts/AppLayout";
 export default {
-    props:['roomTypes'],
+    props:['roomTypes','data'],
     data(){
         return{
             form: this.$inertia.form({
-                room_type: null,
-                name: null,
-                description: null,
-                price: null,
+                id: this.data.id,
+                room_type: this.data.room_type_id,
+                name: this.data.name,
+                description: this.data.description,
+                price: this.data.price,
             }),
         }
     },
@@ -115,8 +116,8 @@ export default {
     methods:{
         submitForm()
         {
-            this.$inertia.visit('/room',{
-                method: 'POST',
+            this.$inertia.visit('/room/'+this.form.id,{
+                method: 'PUT',
                 data: this.form,
                 preserveState:true,
                 preserveScroll:true,

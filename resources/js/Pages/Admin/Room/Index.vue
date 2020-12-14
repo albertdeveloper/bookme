@@ -6,12 +6,11 @@
             </h2>
         </template>
         <div class="p-6">
-
-            <select class="rounded   px-3 py-3 border" v-model="search">
-                <option></option>
-                <option v-for="roomType in roomTypes" :value="roomType.title_slug">{{ roomType.title }}</option>
-            </select>
-
+            <InertiaLink preserve-state preserve-scroll :href="route('room.create')"
+                         class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline float-left">
+                New Room
+            </InertiaLink>
+            <Search :filters="filters" :is-dropdown="false" :route-url="route('room.index')"   />
             <div class="mt-6 rounded" v-if="rooms.data.length > 0">
                 <div class="shadow overflow-x-auto">
                     <table class="w-full whitespace-no-wrap">
@@ -20,8 +19,6 @@
                             <th class="px-6 pt-6 pb-4">Description</th>
                         </tr>
                         <tr v-for="room in rooms.data">
-
-
                             <td class="px-6 py-4 flex items-center focus:text-indigo-500 border-t">
                                 <InertiaLink :href="route('room_type.edit',{id:room.id})">
                                     {{ room.name }}
@@ -45,28 +42,11 @@
 <script>
 import AppLayout from "@/Layouts/AppLayout";
 import Pagination from "@/Shared/Pagination";
-
-import { stringify } from 'qs';
+import Search from "@/Pages/Filter/Search";
 
 export default {
     props: ['rooms', 'roomTypes', 'filters'],
-    components: {Pagination, AppLayout},
-    data() {
-        return {
-            search: this.filters.filter,
-        }
-    },
-    watch: {
-        search: _.throttle(function(){
-            const query = stringify({
-                room_type: this.search || undefined
-            });
-            this.$inertia.visit(query ? `/room?${query}` : `/room`,{
-                preserveState: true,
-                preserveScroll: true,
-            });
-        },500)
+    components: {Pagination, AppLayout, Search},
 
-    }
 }
 </script>

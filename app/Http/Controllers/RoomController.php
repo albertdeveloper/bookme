@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\RoomRequest;
 use App\Repositories\RoomRepositoryContract;
 use App\Repositories\RoomTypeRepositoryContract;
 use Illuminate\Http\Request;
@@ -26,8 +27,8 @@ class RoomController extends Controller
     public function index()
     {
         return Inertia::render('Admin/Room/Index',[
-            'filters' => request()->only('room_type'),
-            'rooms' => $this->roomRepository->get(request()->only('room_type')),
+            'filters' => request()->only('search','dropdown'),
+            'rooms' => $this->roomRepository->get(request()->only('search','dropdown')),
             'roomTypes' => $this->roomTypeRepository->list(),
         ]);
     }
@@ -39,7 +40,9 @@ class RoomController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Admin/Room/Create',[
+            'roomTypes' => $this->roomTypeRepository->list(),
+        ]);
     }
 
     /**
@@ -48,9 +51,10 @@ class RoomController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RoomRequest $request)
     {
-        //
+        $this->roomRepository->process($request);
+        return redirect()->route('room.index');
     }
 
     /**

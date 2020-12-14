@@ -9,9 +9,23 @@ class RoomRepository implements RoomRepositoryContract
     {
         $query = Room::query();
         $query->whereHas('roomType',function($q) use($request) {
-            if(isset($request['room_type'])) $q->where('room_types.title_slug',$request['room_type']);
+            if(isset($request['dropdown'])) $q->where('room_types.title_slug',$request['dropdown']);
         });
 
+        if(isset($request['search'])) $query->where('name','like','%'.$request['search'].'%');
+
         return $query->paginate(10);
+    }
+
+    public function process($request)
+    {
+        Room::updateOrCreate(['id' => $request->id],
+        [
+            'user_id' => auth()->user()->id,
+            'room_type_id' => $request->room_type,
+            'name' => $request->name,
+            'description' => $request->description,
+            'price' => $request->price,
+        ]);
     }
 }

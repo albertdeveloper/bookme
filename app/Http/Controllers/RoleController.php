@@ -88,9 +88,12 @@ class RoleController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(RoleRequest $request, $id)
     {
-        //
+        $this->roleRepository->findById($id);
+        $this->roleRepository->process($request);
+        return redirect()->route('role.index');
+
     }
 
     /**

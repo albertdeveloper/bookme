@@ -3058,6 +3058,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -47876,6 +47891,55 @@ var render = function() {
                                 [
                                   _vm._v(
                                     "\n                                    Profile\n                                "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c("div", {
+                                staticClass: "border-t border-gray-100"
+                              }),
+                              _vm._v(" "),
+                              _c(
+                                "div",
+                                {
+                                  staticClass:
+                                    "block px-4 py-2 text-xs text-gray-400"
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                    User Management\n                                "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "jet-dropdown-link",
+                                {
+                                  attrs: { href: _vm.route("permission.index") }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                    Permission\n                                "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "jet-dropdown-link",
+                                { attrs: { href: _vm.route("profile.show") } },
+                                [
+                                  _vm._v(
+                                    "\n                                    Roles\n                                "
+                                  )
+                                ]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "jet-dropdown-link",
+                                { attrs: { href: _vm.route("profile.show") } },
+                                [
+                                  _vm._v(
+                                    "\n                                    Users\n                                "
                                   )
                                 ]
                               ),

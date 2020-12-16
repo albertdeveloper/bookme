@@ -57,6 +57,21 @@
                                     <jet-dropdown-link :href="route('profile.show')">
                                         Profile
                                     </jet-dropdown-link>
+                                    <div class="border-t border-gray-100"></div>
+                                    <div class="block px-4 py-2 text-xs text-gray-400">
+                                        User Management
+                                    </div>
+                                    <jet-dropdown-link :href="route('permission.index')">
+                                        Permission
+                                    </jet-dropdown-link>
+
+                                    <jet-dropdown-link :href="route('profile.show')">
+                                        Roles
+                                    </jet-dropdown-link>
+
+                                    <jet-dropdown-link :href="route('profile.show')">
+                                        Users
+                                    </jet-dropdown-link>
 
                                     <jet-dropdown-link :href="route('api-tokens.index')" v-if="$page.jetstream.hasApiFeatures">
                                         API Tokens

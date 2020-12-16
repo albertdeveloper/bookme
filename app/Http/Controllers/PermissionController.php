@@ -2,10 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PermissionRequest;
+use App\Repositories\PermissionRepositoryContract;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class PermissionController extends Controller
 {
+    private $permissionRepo;
+
+    public function __construct(PermissionRepositoryContract $permissionRepositoryContract)
+    {
+        $this->permissionRepo = $permissionRepositoryContract;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +23,9 @@ class PermissionController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Admin/UserManagement/Permission/Index',[
+            'permissions' => $this->permissionRepo->get(),
+        ]);
     }
 
     /**
@@ -23,7 +35,7 @@ class PermissionController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Admin/UserManagement/Permission/Create');
     }
 
     /**
@@ -32,9 +44,10 @@ class PermissionController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PermissionRequest $request)
     {
-        //
+        $this->permissionRepo->process($request);
+        return redirect()->route('permission.index');
     }
 
     /**
@@ -56,7 +69,9 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
-        //
+        return Inertia::render('Admin/UserManagement/Permission/Edit',[
+            'data' => $this->permissionRepo->findById($id),
+        ]);
     }
 
     /**
@@ -66,9 +81,11 @@ class PermissionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(PermissionRequest $request, $id)
     {
-        //
+        $this->permissionRepo->findById($id);
+        $this->permissionRepo->process($request);
+        return redirect()->route('permission.index');
     }
 
     /**

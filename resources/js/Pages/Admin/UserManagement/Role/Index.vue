@@ -12,7 +12,7 @@
             </InertiaLink>
             <div class="mt-6 rounded" v-if="roles.data.length > 0">
                 <div class="shadow overflow-x-auto">
-                    <table class="w-full whitespace-no-wrap">
+                    <table class="table-fixed">
                         <tr class="text-left font-bold">
                             <th class="px-6 pt-6 pb-4">Title</th>
                             <th class="px-6 pt-6 pb-4">Permissions</th>
@@ -24,10 +24,12 @@
                                     {{ role.title }}
                                 </InertiaLink>
                             </td>
-                            <td class="border-t" >
-                                <span v-for="permission in role.permissions">
-                                  <button class="bg-teal-500 py-2 px-2 rounded text-white  mr-2 ml-1">{{ permission.title }}</button>
-                                </span>
+                            <td class="border-t break-words">
+                                <button
+                                    class="rounded btn primary px-2 py-2 bg-blue-500 hover:bg-blue-700 text-white mr-1 mt-1 mb-1"
+                                    v-for="permission in role.permissions">
+                                    {{ permission.title }}
+                                </button>
                             </td>
 
                         </tr>
@@ -43,8 +45,9 @@
 <script>
 import AppLayout from "@/Layouts/AppLayout";
 import Pagination from "@/Shared/Pagination";
+
 export default {
-    props:['roles'],
+    props: ['roles'],
     components: {Pagination, AppLayout}
 }
 </script>

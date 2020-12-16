@@ -2,10 +2,9 @@
 
 namespace App\Repositories;
 
-interface PermissionRepositoryContract
+interface RoleRepositoryContract
 {
     public function get();
     public function process($request);
     public function findById($id);
-    public function list();
 }

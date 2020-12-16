@@ -21,4 +21,10 @@ class PermissionRepository implements PermissionRepositoryContract
     {
          return Permission::findOrfail($id);
     }
+
+    public function list()
+    {
+        return Permission::get();
+    }
+
 }

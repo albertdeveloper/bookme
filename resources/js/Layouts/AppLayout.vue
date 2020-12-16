@@ -65,8 +65,8 @@
                                         Permission
                                     </jet-dropdown-link>
 
-                                    <jet-dropdown-link :href="route('profile.show')">
-                                        Roles
+                                    <jet-dropdown-link :href="route('role.index')">
+                                        Role
                                     </jet-dropdown-link>
 
                                     <jet-dropdown-link :href="route('profile.show')">

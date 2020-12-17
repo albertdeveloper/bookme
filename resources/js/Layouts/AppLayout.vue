@@ -18,11 +18,11 @@
                                 Dashboard
                             </jet-nav-link>
 
-                            <jet-nav-link :href="route('room_type.index')" :active="route().current('room_type.index')">
+                            <jet-nav-link :href="route('admin.room_type.index')" :active="route().current('room_type.index')">
                                 Room Type
                             </jet-nav-link>
 
-                            <jet-nav-link :href="route('room.index')" :active="route().current('room.index')">
+                            <jet-nav-link :href="route('admin.room.index')" :active="route().current('room.index')">
                                 Room
                             </jet-nav-link>
                         </div>
@@ -61,11 +61,11 @@
                                     <div class="block px-4 py-2 text-xs text-gray-400">
                                         User Management
                                     </div>
-                                    <jet-dropdown-link :href="route('permission.index')">
+                                    <jet-dropdown-link :href="route('admin.permission.index')">
                                         Permission
                                     </jet-dropdown-link>
 
-                                    <jet-dropdown-link :href="route('role.index')">
+                                    <jet-dropdown-link :href="route('admin.role.index')">
                                         Role
                                     </jet-dropdown-link>
 

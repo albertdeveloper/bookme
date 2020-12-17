@@ -73,7 +73,7 @@ export default {
     },
     methods: {
         submitForm() {
-            this.$inertia.visit('/room_type',{
+            this.$inertia.visit('/admin/room_type',{
                 method: 'POST',
                 data: this.form,
                 preserveState:true,

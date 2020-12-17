@@ -3561,7 +3561,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submitForm: function submitForm() {
-      this.$inertia.visit('/room', {
+      this.$inertia.visit('/admin/room', {
         method: 'POST',
         data: this.form,
         preserveState: true,
@@ -3573,77 +3573,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Index.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Index.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
-/* harmony import */ var _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/Pagination */ "./resources/js/Shared/Pagination.vue");
-/* harmony import */ var _Pages_Filter_Search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Pages/Filter/Search */ "./resources/js/Pages/Filter/Search.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['rooms', 'roomTypes', 'filters'],
-  components: {
-    Pagination: _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__["default"],
-    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Search: _Pages_Filter_Search__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Update.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Update.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Edit.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Edit.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3768,13 +3701,80 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submitForm: function submitForm() {
-      this.$inertia.visit('/room/' + this.form.id, {
+      this.$inertia.visit('/admin/room/' + this.form.id, {
         method: 'PUT',
         data: this.form,
         preserveState: true,
         preserveScroll: true
       });
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Index.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Index.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+/* harmony import */ var _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/Pagination */ "./resources/js/Shared/Pagination.vue");
+/* harmony import */ var _Pages_Filter_Search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Pages/Filter/Search */ "./resources/js/Pages/Filter/Search.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['rooms', 'roomTypes', 'filters'],
+  components: {
+    Pagination: _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__["default"],
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Search: _Pages_Filter_Search__WEBPACK_IMPORTED_MODULE_2__["default"]
   }
 });
 
@@ -3865,7 +3865,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submitForm: function submitForm() {
-      this.$inertia.visit('/room_type', {
+      this.$inertia.visit('/admin/room_type', {
         method: 'POST',
         data: this.form,
         preserveState: true,
@@ -3877,72 +3877,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
-/* harmony import */ var _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/Pagination */ "./resources/js/Shared/Pagination.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['roomTypes'],
-  components: {
-    Pagination: _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__["default"],
-    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4028,13 +3966,75 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submitForm: function submitForm() {
-      this.$inertia.visit('/room_type/' + this.form.id, {
+      this.$inertia.visit('/admin/room_type/' + this.form.id, {
         method: 'PUT',
         data: this.form,
         preserveState: true,
         preserveScroll: true
       });
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
+/* harmony import */ var _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/Pagination */ "./resources/js/Shared/Pagination.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['roomTypes'],
+  components: {
+    Pagination: _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__["default"],
+    AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
@@ -4109,7 +4109,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submitForm: function submitForm() {
-      this.$inertia.visit('/permission', {
+      this.$inertia.visit('/admin/permission', {
         method: 'POST',
         data: this.form,
         preserveState: true,
@@ -4191,7 +4191,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submitForm: function submitForm() {
-      this.$inertia.visit('/permission/' + this.form.id + '/', {
+      this.$inertia.visit('/admin/permission/' + this.form.id + '/', {
         method: 'PUT',
         data: this.form,
         preserveState: true,
@@ -4355,7 +4355,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     submitForm: function submitForm() {
       this.form.permissions = this.value;
-      this.$inertia.visit('/role', {
+      this.$inertia.visit('/admin/role', {
         method: 'POST',
         data: this.form,
         preserveState: true,
@@ -4481,7 +4481,7 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     submitForm: function submitForm() {
       this.form.permissions = this.value;
-      this.$inertia.visit('/role/' + this.form.id, {
+      this.$inertia.visit('/admin/role/' + this.form.id, {
         method: 'PUT',
         data: this.form,
         preserveState: true,
@@ -49052,7 +49052,7 @@ var render = function() {
                     "jet-nav-link",
                     {
                       attrs: {
-                        href: _vm.route("room_type.index"),
+                        href: _vm.route("admin.room_type.index"),
                         active: _vm.route().current("room_type.index")
                       }
                     },
@@ -49067,7 +49067,7 @@ var render = function() {
                     "jet-nav-link",
                     {
                       attrs: {
-                        href: _vm.route("room.index"),
+                        href: _vm.route("admin.room.index"),
                         active: _vm.route().current("room.index")
                       }
                     },
@@ -49202,7 +49202,9 @@ var render = function() {
                               _c(
                                 "jet-dropdown-link",
                                 {
-                                  attrs: { href: _vm.route("permission.index") }
+                                  attrs: {
+                                    href: _vm.route("admin.permission.index")
+                                  }
                                 },
                                 [
                                   _vm._v(
@@ -49213,7 +49215,9 @@ var render = function() {
                               _vm._v(" "),
                               _c(
                                 "jet-dropdown-link",
-                                { attrs: { href: _vm.route("role.index") } },
+                                {
+                                  attrs: { href: _vm.route("admin.role.index") }
+                                },
                                 [
                                   _vm._v(
                                     "\n                                    Role\n                                "
@@ -50810,177 +50814,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Index.vue?vue&type=template&id=30bc4807&":
-/*!**************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Index.vue?vue&type=template&id=30bc4807& ***!
-  \**************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "app-layout",
-    {
-      scopedSlots: _vm._u([
-        {
-          key: "header",
-          fn: function() {
-            return [
-              _c(
-                "h2",
-                {
-                  staticClass:
-                    "font-semibold text-xl text-gray-800 leading-tight"
-                },
-                [_vm._v("\n            Room\n        ")]
-              )
-            ]
-          },
-          proxy: true
-        }
-      ])
-    },
-    [
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "p-6" },
-        [
-          _c(
-            "InertiaLink",
-            {
-              staticClass:
-                "border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline float-left",
-              attrs: {
-                "preserve-state": "",
-                "preserve-scroll": "",
-                href: _vm.route("room.create")
-              }
-            },
-            [_vm._v("\n            New Room\n        ")]
-          ),
-          _vm._v(" "),
-          _c("Search", {
-            attrs: {
-              filters: _vm.filters,
-              "is-dropdown": false,
-              "route-url": _vm.route("room.index")
-            }
-          }),
-          _vm._v(" "),
-          _vm.rooms.data.length > 0
-            ? _c(
-                "div",
-                { staticClass: "mt-6 rounded" },
-                [
-                  _c("div", { staticClass: "shadow overflow-x-auto" }, [
-                    _c(
-                      "table",
-                      { staticClass: "w-full whitespace-no-wrap" },
-                      [
-                        _c("tr", { staticClass: "text-left font-bold" }, [
-                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
-                            _vm._v("Title")
-                          ]),
-                          _vm._v(" "),
-                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
-                            _vm._v("Description")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _vm._l(_vm.rooms.data, function(room) {
-                          return _c("tr", [
-                            _c(
-                              "td",
-                              {
-                                staticClass:
-                                  "px-6 py-4 flex items-center focus:text-indigo-500 border-t"
-                              },
-                              [
-                                _c(
-                                  "InertiaLink",
-                                  {
-                                    attrs: {
-                                      href: _vm.route("room.edit", {
-                                        id: room.id
-                                      })
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(room.name) +
-                                        "\n                            "
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "td",
-                              {
-                                staticClass:
-                                  "px-6 py-4  items-center focus:text-indigo-500 border-t"
-                              },
-                              [
-                                _c(
-                                  "InertiaLink",
-                                  {
-                                    attrs: {
-                                      href: _vm.route("room.edit", {
-                                        id: room.id
-                                      })
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(room.description) +
-                                        "\n                            "
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        })
-                      ],
-                      2
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("pagination", { attrs: { links: _vm.rooms.links } })
-                ],
-                1
-              )
-            : _vm._e()
-        ],
-        1
-      )
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Update.vue?vue&type=template&id=a97e2638&":
-/*!***************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Update.vue?vue&type=template&id=a97e2638& ***!
-  \***************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Edit.vue?vue&type=template&id=85398336&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Edit.vue?vue&type=template&id=85398336& ***!
+  \*************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -51325,6 +51162,173 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Index.vue?vue&type=template&id=30bc4807&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/Room/Index.vue?vue&type=template&id=30bc4807& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "font-semibold text-xl text-gray-800 leading-tight"
+                },
+                [_vm._v("\n            Room\n        ")]
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "p-6" },
+        [
+          _c(
+            "InertiaLink",
+            {
+              staticClass:
+                "border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline float-left",
+              attrs: {
+                "preserve-state": "",
+                "preserve-scroll": "",
+                href: _vm.route("admin.room.create")
+              }
+            },
+            [_vm._v("\n            New Room\n        ")]
+          ),
+          _vm._v(" "),
+          _c("Search", {
+            attrs: {
+              filters: _vm.filters,
+              "is-dropdown": false,
+              "route-url": _vm.route("room.index")
+            }
+          }),
+          _vm._v(" "),
+          _vm.rooms.data.length > 0
+            ? _c(
+                "div",
+                { staticClass: "mt-6 rounded" },
+                [
+                  _c("div", { staticClass: "shadow overflow-x-auto" }, [
+                    _c(
+                      "table",
+                      { staticClass: "w-full whitespace-no-wrap" },
+                      [
+                        _c("tr", { staticClass: "text-left font-bold" }, [
+                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
+                            _vm._v("Title")
+                          ]),
+                          _vm._v(" "),
+                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
+                            _vm._v("Description")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _vm._l(_vm.rooms.data, function(room) {
+                          return _c("tr", [
+                            _c(
+                              "td",
+                              {
+                                staticClass:
+                                  "px-6 py-4 flex items-center focus:text-indigo-500 border-t"
+                              },
+                              [
+                                _c(
+                                  "InertiaLink",
+                                  {
+                                    attrs: {
+                                      href: _vm.route("admin.room.edit", {
+                                        id: room.id
+                                      })
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(room.name) +
+                                        "\n                            "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "td",
+                              {
+                                staticClass:
+                                  "px-6 py-4  items-center focus:text-indigo-500 border-t"
+                              },
+                              [
+                                _c(
+                                  "InertiaLink",
+                                  {
+                                    attrs: {
+                                      href: _vm.route("admin.room.edit", {
+                                        id: room.id
+                                      })
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(room.description) +
+                                        "\n                            "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            )
+                          ])
+                        })
+                      ],
+                      2
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("pagination", { attrs: { links: _vm.rooms.links } })
+                ],
+                1
+              )
+            : _vm._e()
+        ],
+        1
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Create.vue?vue&type=template&id=f2a02c06&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Create.vue?vue&type=template&id=f2a02c06& ***!
@@ -51536,169 +51540,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=template&id=5cf8063e&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=template&id=5cf8063e& ***!
-  \******************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "app-layout",
-    {
-      scopedSlots: _vm._u([
-        {
-          key: "header",
-          fn: function() {
-            return [
-              _c(
-                "h2",
-                {
-                  staticClass:
-                    "font-semibold text-xl text-gray-800 leading-tight"
-                },
-                [_vm._v("\n            Room Type's\n        ")]
-              )
-            ]
-          },
-          proxy: true
-        }
-      ])
-    },
-    [
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "p-6" },
-        [
-          _c(
-            "InertiaLink",
-            {
-              staticClass:
-                "border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline",
-              attrs: {
-                "preserve-state": "",
-                "preserve-scroll": "",
-                href: _vm.route("room_type.create")
-              }
-            },
-            [_vm._v("\n            New Room Type\n        ")]
-          ),
-          _vm._v(" "),
-          _vm.roomTypes.data.length > 0
-            ? _c(
-                "div",
-                { staticClass: "mt-6 rounded" },
-                [
-                  _c("div", { staticClass: "shadow overflow-x-auto" }, [
-                    _c(
-                      "table",
-                      { staticClass: "w-full whitespace-no-wrap" },
-                      [
-                        _c("tr", { staticClass: "text-left font-bold" }, [
-                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
-                            _vm._v("Title")
-                          ]),
-                          _vm._v(" "),
-                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
-                            _vm._v("Description")
-                          ])
-                        ]),
-                        _vm._v(" "),
-                        _vm._l(_vm.roomTypes.data, function(roomType) {
-                          return _c("tr", [
-                            _c(
-                              "td",
-                              {
-                                staticClass:
-                                  "px-6 py-4 flex items-center focus:text-indigo-500 border-t"
-                              },
-                              [
-                                _c(
-                                  "InertiaLink",
-                                  {
-                                    attrs: {
-                                      href: _vm.route("room_type.edit", {
-                                        id: roomType.id
-                                      })
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(roomType.title) +
-                                        "\n                            "
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "td",
-                              {
-                                staticClass:
-                                  "px-6 py-4  items-center focus:text-indigo-500 border-t"
-                              },
-                              [
-                                _c(
-                                  "InertiaLink",
-                                  {
-                                    attrs: {
-                                      href: _vm.route("room_type.edit", {
-                                        id: roomType.id
-                                      })
-                                    }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                                " +
-                                        _vm._s(roomType.description) +
-                                        "\n                            "
-                                    )
-                                  ]
-                                )
-                              ],
-                              1
-                            )
-                          ])
-                        })
-                      ],
-                      2
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("pagination", { attrs: { links: _vm.roomTypes.links } })
-                ],
-                1
-              )
-            : _vm._e()
-        ],
-        1
-      )
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=template&id=236fd34a&":
-/*!*******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=template&id=236fd34a& ***!
-  \*******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=template&id=ee76f36a&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=template&id=ee76f36a& ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -51913,6 +51758,165 @@ var render = function() {
               ])
             ]
           )
+        ],
+        1
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=template&id=5cf8063e&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Admin/RoomType/Index.vue?vue&type=template&id=5cf8063e& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "app-layout",
+    {
+      scopedSlots: _vm._u([
+        {
+          key: "header",
+          fn: function() {
+            return [
+              _c(
+                "h2",
+                {
+                  staticClass:
+                    "font-semibold text-xl text-gray-800 leading-tight"
+                },
+                [_vm._v("\n            Room Type's\n        ")]
+              )
+            ]
+          },
+          proxy: true
+        }
+      ])
+    },
+    [
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "p-6" },
+        [
+          _c(
+            "InertiaLink",
+            {
+              staticClass:
+                "border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline",
+              attrs: {
+                "preserve-state": "",
+                "preserve-scroll": "",
+                href: _vm.route("admin.room_type.create")
+              }
+            },
+            [_vm._v("\n            New Room Type\n        ")]
+          ),
+          _vm._v(" "),
+          _vm.roomTypes.data.length > 0
+            ? _c(
+                "div",
+                { staticClass: "mt-6 rounded" },
+                [
+                  _c("div", { staticClass: "shadow overflow-x-auto" }, [
+                    _c(
+                      "table",
+                      { staticClass: "w-full whitespace-no-wrap" },
+                      [
+                        _c("tr", { staticClass: "text-left font-bold" }, [
+                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
+                            _vm._v("Title")
+                          ]),
+                          _vm._v(" "),
+                          _c("th", { staticClass: "px-6 pt-6 pb-4" }, [
+                            _vm._v("Description")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _vm._l(_vm.roomTypes.data, function(roomType) {
+                          return _c("tr", [
+                            _c(
+                              "td",
+                              {
+                                staticClass:
+                                  "px-6 py-4 flex items-center focus:text-indigo-500 border-t"
+                              },
+                              [
+                                _c(
+                                  "InertiaLink",
+                                  {
+                                    attrs: {
+                                      href: _vm.route("admin.room_type.edit", {
+                                        id: roomType.id
+                                      })
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(roomType.title) +
+                                        "\n                            "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "td",
+                              {
+                                staticClass:
+                                  "px-6 py-4  items-center focus:text-indigo-500 border-t"
+                              },
+                              [
+                                _c(
+                                  "InertiaLink",
+                                  {
+                                    attrs: {
+                                      href: _vm.route("admin.room_type.edit", {
+                                        id: roomType.id
+                                      })
+                                    }
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                                " +
+                                        _vm._s(roomType.description) +
+                                        "\n                            "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            )
+                          ])
+                        })
+                      ],
+                      2
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("pagination", { attrs: { links: _vm.roomTypes.links } })
+                ],
+                1
+              )
+            : _vm._e()
         ],
         1
       )
@@ -52267,7 +52271,7 @@ var render = function() {
               attrs: {
                 "preserve-state": "",
                 "preserve-scroll": "",
-                href: _vm.route("permission.create")
+                href: _vm.route("admin.permission.create")
               }
             },
             [_vm._v("\n            New Permission\n        ")]
@@ -52302,7 +52306,7 @@ var render = function() {
                                   "InertiaLink",
                                   {
                                     attrs: {
-                                      href: _vm.route("permission.edit", {
+                                      href: _vm.route("admin.permission.edit", {
                                         id: roomType.id
                                       })
                                     }
@@ -52812,7 +52816,7 @@ var render = function() {
               attrs: {
                 "preserve-state": "",
                 "preserve-scroll": "",
-                href: _vm.route("role.create")
+                href: _vm.route("admin.role.create")
               }
             },
             [_vm._v("\n            New Role\n        ")]
@@ -52851,7 +52855,7 @@ var render = function() {
                                   "InertiaLink",
                                   {
                                     attrs: {
-                                      href: _vm.route("role.edit", {
+                                      href: _vm.route("admin.role.edit", {
                                         id: role.id
                                       })
                                     }
@@ -68132,16 +68136,16 @@ var map = {
 	"./API/Index.vue": "./resources/js/Pages/API/Index.vue",
 	"./Admin/Room/Create": "./resources/js/Pages/Admin/Room/Create.vue",
 	"./Admin/Room/Create.vue": "./resources/js/Pages/Admin/Room/Create.vue",
+	"./Admin/Room/Edit": "./resources/js/Pages/Admin/Room/Edit.vue",
+	"./Admin/Room/Edit.vue": "./resources/js/Pages/Admin/Room/Edit.vue",
 	"./Admin/Room/Index": "./resources/js/Pages/Admin/Room/Index.vue",
 	"./Admin/Room/Index.vue": "./resources/js/Pages/Admin/Room/Index.vue",
-	"./Admin/Room/Update": "./resources/js/Pages/Admin/Room/Update.vue",
-	"./Admin/Room/Update.vue": "./resources/js/Pages/Admin/Room/Update.vue",
 	"./Admin/RoomType/Create": "./resources/js/Pages/Admin/RoomType/Create.vue",
 	"./Admin/RoomType/Create.vue": "./resources/js/Pages/Admin/RoomType/Create.vue",
+	"./Admin/RoomType/Edit": "./resources/js/Pages/Admin/RoomType/Edit.vue",
+	"./Admin/RoomType/Edit.vue": "./resources/js/Pages/Admin/RoomType/Edit.vue",
 	"./Admin/RoomType/Index": "./resources/js/Pages/Admin/RoomType/Index.vue",
 	"./Admin/RoomType/Index.vue": "./resources/js/Pages/Admin/RoomType/Index.vue",
-	"./Admin/RoomType/Update": "./resources/js/Pages/Admin/RoomType/Update.vue",
-	"./Admin/RoomType/Update.vue": "./resources/js/Pages/Admin/RoomType/Update.vue",
 	"./Admin/UserManagement/Permission/Create": "./resources/js/Pages/Admin/UserManagement/Permission/Create.vue",
 	"./Admin/UserManagement/Permission/Create.vue": "./resources/js/Pages/Admin/UserManagement/Permission/Create.vue",
 	"./Admin/UserManagement/Permission/Edit": "./resources/js/Pages/Admin/UserManagement/Permission/Edit.vue",
@@ -68401,6 +68405,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Admin/Room/Edit.vue":
+/*!************************************************!*\
+  !*** ./resources/js/Pages/Admin/Room/Edit.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Edit_vue_vue_type_template_id_85398336___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=85398336& */ "./resources/js/Pages/Admin/Room/Edit.vue?vue&type=template&id=85398336&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Admin/Room/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Edit_vue_vue_type_template_id_85398336___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_85398336___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Admin/Room/Edit.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Admin/Room/Edit.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/Pages/Admin/Room/Edit.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Admin/Room/Edit.vue?vue&type=template&id=85398336&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/Pages/Admin/Room/Edit.vue?vue&type=template&id=85398336& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_85398336___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=85398336& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Edit.vue?vue&type=template&id=85398336&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_85398336___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_85398336___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Admin/Room/Index.vue":
 /*!*************************************************!*\
   !*** ./resources/js/Pages/Admin/Room/Index.vue ***!
@@ -68465,75 +68538,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_30bc4807___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_30bc4807___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Admin/Room/Update.vue":
-/*!**************************************************!*\
-  !*** ./resources/js/Pages/Admin/Room/Update.vue ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Update_vue_vue_type_template_id_a97e2638___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Update.vue?vue&type=template&id=a97e2638& */ "./resources/js/Pages/Admin/Room/Update.vue?vue&type=template&id=a97e2638&");
-/* harmony import */ var _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Update.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Admin/Room/Update.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Update_vue_vue_type_template_id_a97e2638___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Update_vue_vue_type_template_id_a97e2638___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/Pages/Admin/Room/Update.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Admin/Room/Update.vue?vue&type=script&lang=js&":
-/*!***************************************************************************!*\
-  !*** ./resources/js/Pages/Admin/Room/Update.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Update.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Admin/Room/Update.vue?vue&type=template&id=a97e2638&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/Pages/Admin/Room/Update.vue?vue&type=template&id=a97e2638& ***!
-  \*********************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_a97e2638___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=template&id=a97e2638& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/Room/Update.vue?vue&type=template&id=a97e2638&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_a97e2638___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_a97e2638___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -68608,6 +68612,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Admin/RoomType/Edit.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/Pages/Admin/RoomType/Edit.vue ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Edit_vue_vue_type_template_id_ee76f36a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=ee76f36a& */ "./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=template&id=ee76f36a&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Edit_vue_vue_type_template_id_ee76f36a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_ee76f36a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Admin/RoomType/Edit.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=template&id=ee76f36a&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=template&id=ee76f36a& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_ee76f36a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=ee76f36a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Edit.vue?vue&type=template&id=ee76f36a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_ee76f36a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_ee76f36a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Admin/RoomType/Index.vue":
 /*!*****************************************************!*\
   !*** ./resources/js/Pages/Admin/RoomType/Index.vue ***!
@@ -68672,75 +68745,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_5cf8063e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_5cf8063e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Admin/RoomType/Update.vue":
-/*!******************************************************!*\
-  !*** ./resources/js/Pages/Admin/RoomType/Update.vue ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Update_vue_vue_type_template_id_236fd34a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Update.vue?vue&type=template&id=236fd34a& */ "./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=template&id=236fd34a&");
-/* harmony import */ var _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Update.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Update_vue_vue_type_template_id_236fd34a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Update_vue_vue_type_template_id_236fd34a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/Pages/Admin/RoomType/Update.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=template&id=236fd34a&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=template&id=236fd34a& ***!
-  \*************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_236fd34a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Update.vue?vue&type=template&id=236fd34a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Admin/RoomType/Update.vue?vue&type=template&id=236fd34a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_236fd34a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Update_vue_vue_type_template_id_236fd34a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -70,7 +70,7 @@ class RoomTypeController extends Controller
      */
     public function edit($id)
     {
-        return Inertia::render('Admin/RoomType/Update',[
+        return Inertia::render('Admin/RoomType/Edit',[
             'data' => $this->roomTypeRepository->findById($id),
         ]);
     }

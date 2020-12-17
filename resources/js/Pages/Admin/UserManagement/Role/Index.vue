@@ -6,7 +6,7 @@
             </h2>
         </template>
         <div class="p-6">
-            <InertiaLink preserve-state preserve-scroll :href="route('role.create')"
+            <InertiaLink preserve-state preserve-scroll :href="route('admin.role.create')"
                          class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline">
                 New Role
             </InertiaLink>
@@ -20,7 +20,7 @@
                         </tr>
                         <tr v-for="role in roles.data">
                             <td class="px-6 py-4 flex items-center focus:text-indigo-500 border-t">
-                                <InertiaLink :href="route('role.edit',{id:role.id})">
+                                <InertiaLink :href="route('admin.role.edit',{id:role.id})">
                                     {{ role.title }}
                                 </InertiaLink>
                             </td>

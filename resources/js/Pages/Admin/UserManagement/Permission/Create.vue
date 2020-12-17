@@ -58,7 +58,7 @@ export default {
     methods:
         {
             submitForm() {
-                this.$inertia.visit('/permission',{
+                this.$inertia.visit('/admin/permission',{
                     method:'POST',
                     data: this.form,
                     preserveState:true,

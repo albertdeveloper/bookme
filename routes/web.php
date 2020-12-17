@@ -26,7 +26,16 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 
-Route::resource('room_type', RoomTypeController::class);
-Route::resource('permission', PermissionController::class);
-Route::resource('role', RoleController::class);
-Route::resource('room', RoomController::class);
+Route::group([
+    'prefix' => 'admin',
+    'as'    => 'admin.',
+    'middleware' => ['auth:sanctum','verified']
+],function(){
+
+    Route::resource('room_type', RoomTypeController::class);
+    Route::resource('permission', PermissionController::class);
+    Route::resource('role', RoleController::class);
+    Route::resource('room', RoomController::class);
+
+});
+

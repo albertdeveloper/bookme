@@ -6,7 +6,7 @@
             </h2>
         </template>
         <div class="p-6">
-            <InertiaLink preserve-state preserve-scroll :href="route('room.create')"
+            <InertiaLink preserve-state preserve-scroll :href="route('admin.room.create')"
                          class="border border-indigo-500 bg-indigo-500 text-white rounded-md px-4 py-2 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline float-left">
                 New Room
             </InertiaLink>
@@ -20,12 +20,12 @@
                         </tr>
                         <tr v-for="room in rooms.data">
                             <td class="px-6 py-4 flex items-center focus:text-indigo-500 border-t">
-                                <InertiaLink :href="route('room.edit',{id:room.id})">
+                                <InertiaLink :href="route('admin.room.edit',{id:room.id})">
                                     {{ room.name }}
                                 </InertiaLink>
                             </td>
                             <td class="px-6 py-4  items-center focus:text-indigo-500 border-t">
-                                <InertiaLink :href="route('room.edit',{id:room.id})">
+                                <InertiaLink :href="route('admin.room.edit',{id:room.id})">
                                     {{ room.description }}
                                 </InertiaLink>
                             </td>

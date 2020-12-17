@@ -115,7 +115,7 @@ export default {
     methods:{
         submitForm()
         {
-            this.$inertia.visit('/room',{
+            this.$inertia.visit('/admin/room',{
                 method: 'POST',
                 data: this.form,
                 preserveState:true,

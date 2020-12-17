@@ -77,7 +77,7 @@ export default {
     },
     methods: {
         submitForm() {
-            this.$inertia.visit('/room_type/'+this.form.id,{
+            this.$inertia.visit('/admin/room_type/'+this.form.id,{
                 method: 'PUT',
                 data: this.form,
                 preserveState:true,

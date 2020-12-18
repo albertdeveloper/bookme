@@ -55,7 +55,7 @@ class RoomController extends Controller
     {
         $this->roomRepository->process($request);
         $this->roomRepository->process($request);
-        return redirect()->route('room.index');
+        return redirect()->route('admin.room.index');
     }
 
     /**
@@ -92,7 +92,10 @@ class RoomController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->roomRepository->findById($id);
+        $this->roomRepository->process($request);
+        return redirect()->route('admin.room.index');
+
     }
 
     /**

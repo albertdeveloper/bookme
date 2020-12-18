@@ -48,7 +48,7 @@ class RoomTypeController extends Controller
     public function store(RoomTypeRequest $request)
     {
         $this->roomTypeRepository->process($request);
-        return redirect()->route('room_type.index');
+        return redirect()->route('admin.room_type.index');
     }
 
     /**
@@ -85,7 +85,7 @@ class RoomTypeController extends Controller
     public function update(RoomTypeRequest $request, $id)
     {
         $this->roomTypeRepository->process($request);
-        return redirect()->route('room_type.index');
+        return redirect()->route('admin.room_type.index');
     }
 
     /**
@@ -97,6 +97,6 @@ class RoomTypeController extends Controller
     public function destroy($id)
     {
         $this->roomTypeRepository->delete($id);
-        return redirect()->route('room_type.index');
+        return redirect()->route('admin.room_type.index');
     }
 }

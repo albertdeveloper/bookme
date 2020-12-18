@@ -53,7 +53,7 @@ class RoleController extends Controller
     public function store(RoleRequest $request)
     {
         $this->roleRepository->process($request);
-        return redirect()->route('role.index');
+        return redirect()->route('admin.role.index');
     }
 
     /**
@@ -92,7 +92,7 @@ class RoleController extends Controller
     {
         $this->roleRepository->findById($id);
         $this->roleRepository->process($request);
-        return redirect()->route('role.index');
+        return redirect()->route('admin.role.index');
 
     }
 

@@ -47,7 +47,7 @@ class PermissionController extends Controller
     public function store(PermissionRequest $request)
     {
         $this->permissionRepo->process($request);
-        return redirect()->route('permission.index');
+        return redirect()->route('admin.permission.index');
     }
 
     /**
@@ -85,7 +85,7 @@ class PermissionController extends Controller
     {
         $this->permissionRepo->findById($id);
         $this->permissionRepo->process($request);
-        return redirect()->route('permission.index');
+        return redirect()->route('admin.permission.index');
     }
 
     /**

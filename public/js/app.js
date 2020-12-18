@@ -51223,7 +51223,7 @@ var render = function() {
             attrs: {
               filters: _vm.filters,
               "is-dropdown": false,
-              "route-url": _vm.route("room.index")
+              "route-url": _vm.route("admin.room.index")
             }
           }),
           _vm._v(" "),

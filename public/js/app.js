@@ -3766,6 +3766,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -4028,6 +4031,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -4214,6 +4221,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/Pagination */ "./resources/js/Shared/Pagination.vue");
+//
+//
+//
 //
 //
 //
@@ -4528,6 +4538,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layouts/AppLayout */ "./resources/js/Layouts/AppLayout.vue");
 /* harmony import */ var _Shared_Pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/Pagination */ "./resources/js/Shared/Pagination.vue");
+//
+//
+//
 //
 //
 //
@@ -51315,7 +51328,9 @@ var render = function() {
                 ],
                 1
               )
-            : _vm._e()
+            : _c("div", { staticClass: "px-3 py-3 shadow rounded mt-2" }, [
+                _vm._v("\n            No record found\n        ")
+              ])
         ],
         1
       )
@@ -51916,7 +51931,9 @@ var render = function() {
                 ],
                 1
               )
-            : _vm._e()
+            : _c("div", { staticClass: "px-3 py-3 shadow rounded mt-2" }, [
+                _vm._v("\n            No record found\n        ")
+              ])
         ],
         1
       )
@@ -52333,7 +52350,9 @@ var render = function() {
                 ],
                 1
               )
-            : _vm._e()
+            : _c("div", { staticClass: "px-3 py-3 shadow rounded mt-2" }, [
+                _vm._v("\n            No record found\n        ")
+              ])
         ],
         1
       )
@@ -52904,7 +52923,9 @@ var render = function() {
                 ],
                 1
               )
-            : _vm._e()
+            : _c("div", { staticClass: "px-3 py-3 shadow rounded mt-2" }, [
+                _vm._v("\n            No record found\n        ")
+              ])
         ],
         1
       )

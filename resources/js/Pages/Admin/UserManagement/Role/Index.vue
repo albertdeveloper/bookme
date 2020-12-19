@@ -38,6 +38,9 @@
                 </div>
                 <pagination :links="roles.links"/>
             </div>
+            <div class="px-3 py-3 shadow rounded mt-2" v-else>
+                No record found
+            </div>
         </div>
 
     </app-layout>

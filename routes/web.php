@@ -4,6 +4,7 @@ use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\RoomTypeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,6 +37,6 @@ Route::group([
     Route::resource('permission', PermissionController::class);
     Route::resource('role', RoleController::class);
     Route::resource('room', RoomController::class);
-
+    Route::resource('user', UserController::class);
 });
 

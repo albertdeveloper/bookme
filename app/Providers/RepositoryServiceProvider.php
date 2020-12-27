@@ -10,6 +10,8 @@ use App\Repositories\RoomRepository;
 use App\Repositories\RoomRepositoryContract;
 use App\Repositories\RoomTypeRepository;
 use App\Repositories\RoomTypeRepositoryContract;
+use App\Repositories\UserRepository;
+use App\Repositories\UserRepositoryContract;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -35,5 +37,6 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(RoomRepositoryContract::class,RoomRepository::class);
         $this->app->bind(PermissionRepositoryContract::class,PermissionRepository::class);
         $this->app->bind(RoleRepositoryContract::class,RoleRepository::class);
+        $this->app->bind(UserRepositoryContract::class,UserRepository::class);
     }
 }
